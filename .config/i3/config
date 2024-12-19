@@ -50,14 +50,17 @@ workspace_layout default
 ##############################
 
 #border indicator on windows:
-new_window pixel 1
+# new_window pixel 1
+new_window pixel 0
 
 # thin borders
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 6
-gaps outer 3
+# gaps inner 6
+# gaps outer 3
+gaps inner 0
+gaps outer 0
 
 # show window title bars (not officially supported with i3gaps)
 # default_border normal
@@ -579,10 +582,15 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 ############################################
 
 bar {
-        output HDMI-0
+        mode hide
+        hidden_state hide
+        modifier Mod4  
+        #output HDMI-0
+        output DP-2
         tray_output none
 		font pango: FiraCode Nerd Font 10
 		status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        # status_command i3status
         position top
         i3bar_command i3bar --transparency
         tray_padding 0
