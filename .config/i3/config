@@ -584,7 +584,8 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 bar {
         mode hide
         hidden_state hide
-        modifier Mod4  
+        modifier Mod1 
+        # Alt key as Mod1
         #output HDMI-0
         output DP-2
         tray_output none
